@@ -1,0 +1,119 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+body {
+  margin : 0;
+  padding : 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+li {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  float : left;
+  line-height: 72px;
+  margin : 6px;
+  font-size: 36px;
+  width : 72px;
+  height : 72px;
+  background-color: white;
+  border-radius: 72px;
+  background-color: #c9e3e6;
+  border : 3px solid #525252;
+}
+
+#official-number {
+  position: fixed;
+  width : 100%;
+  height : 100%;
+  margin: 0;
+  padding : 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #cce2f4;
+  color : black;
+  overflow: hidden;
+}
+
+#official-number table {
+  width : 100%;
+  height : 86%;
+  font-size: 96px;
+  text-align: center;
+  border: solid 5px black;
+  padding : 5px;
+  border-radius: 25px;
+}
+
+#official-number table td {
+  border: solid 5px #525252;
+  margin : 5px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#official-number table td:hover {
+  color : white;
+  background-color: #ead065; 
+}
+
+#official-number .pass {
+  background-color: #ead065; 
+}
+
+#official-number .header {
+  font-family: "Noto Sans KR", sans-serif;
+  margin : 24px;
+  background-color: white;
+  border-radius : 10px;
+}
+
+#official-number .title {
+  text-align: center;
+  width : 20%;
+  float :left;
+  color :white;
+  background-color: #879dca;
+  border-radius : 10px;
+}
+
+#official-number .text {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+
+#official-number .fail {
+  background-color: #fd6f22 !important;
+}
+
+#official-number .up {
+  float: left;
+  width : 100%;
+  height : 70%;
+}
+
+#official-number .bottom {
+  float: left;
+  width: calc(100% - 64px);
+  height : 30%;
+}
+
+#official-number div[name=count] {
+  text-align: center;
+  font-size: 5em;
+  line-height: 256px;
+  width : 256px;
+  height: 256px;
+  color :black;
+  background-color :#58ccff;
+  margin : 128px;
+  border-radius: 128px;
+  border: solid 5px black;
+}

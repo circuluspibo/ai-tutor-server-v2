@@ -1,0 +1,199 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
+@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-subset.css");
+@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-ligature-full.css");
+@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-ligature-subset.css");
+body {
+  margin : 0;
+  padding : 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+td {
+  font-family : Consolas, "D2Coding",
+}
+
+li {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  float : left;
+  line-height: 72px;
+  margin : 6px;
+  font-size: 36px;
+  width : 72px;
+  height : 72px;
+  background-color: white;
+  border-radius: 72px;
+  background-color: #c9e3e6;
+  border : 3px solid #525252;
+}
+
+#WORD {
+  height : 100%;
+  margin: 0;
+  padding : 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #cce2f4;
+  color : black;
+  overflow: hidden;
+}
+
+#WORD table {
+  height: 100%;
+  font-size: 64px;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#WORD tr.head th {
+  width : 5% !important;
+  border: solid 5px #525252;
+  margin : 5px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#WORD table td {
+  border: solid 5px #525252;
+  margin : 5px;
+  line-height: 112px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#WORD table.top td {
+  font-size : 140px;
+  background-color: lemonchiffon;
+}
+
+#WORD table.bottom td {
+  height: 25%;
+}
+
+#WORD table.bottom td.empty {
+  border-color : transparent !important;
+  background-color: transparent !important;
+}
+
+#WORD table td:hover {
+  color : white;
+  background-color: #ead065; 
+}
+
+#WORD header {
+  background-color: rgba(255,255,255,0.5);
+  font-family: "Noto Sans KR", sans-serif;
+  line-height : 64px;
+  background-color: white;
+  width : 100%;
+  height : 64px;
+  text-align: center;
+}
+
+#WORD header .app {
+  float : left;
+  text-align: center;
+  width : 20%;
+  height : 64px;
+  float :left;
+  color :black;
+  background-color: #96cdfc;
+}
+
+#WORD header .title {
+  float : left;
+  width : calc(80% - 132px);
+}
+
+#WORD header .control {
+  float : left;
+  width : 132px;
+}
+
+#WORD button {
+  width : 64px;
+  height : 64px;
+  background-color : rgba(0,0,0,0.2) ;
+  color : black;
+  border: none;
+  margin : 0;
+  padding : 0;
+}
+
+#WORD .text {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+
+#WORD div[name=count] {
+  text-align: center;
+  font-size: 5em;
+  line-height: 256px;
+  width : 256px;
+  height: 256px;
+  color :black;
+  background-color :#58ccff;
+  margin : 128px;
+  border-radius: 128px;
+  border: solid 5px black;
+}
+
+#WORD_D {
+  margin-left : 10px;
+  margin-top : 10px;
+}
+
+#WORD canvas { 
+  position: absolute;
+  width: 420px;
+  height: 240px;
+  bottom: 10px;
+  left: 0;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+#WORD section.left {
+  float: left;
+  width : 24%;
+  height : 100%;
+}
+
+#WORD section.right {
+  float: left;
+  width : 76%;
+  height : calc(100% - 48px);
+}
+
+#WORD .donut-text {
+  position: absolute;
+  left: 12%;
+  top: 26%;
+  transform: translate(-50%,-50%);
+  font-size: 128px;
+  font-weight: 800;
+  color: #2870b3;
+}
+
+#WORD .top {
+  float: left;
+  width : 100%;
+  height : 35%;
+}
+
+#WORD .bottom {
+  float: left;
+  width: 100%;
+  height : calc(65% - 48px);
+}

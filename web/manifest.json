@@ -1,0 +1,14 @@
+{
+  "short_name": "ACROS",
+  "name": "ACROS",
+  "score" : ".",
+  "icons": [{
+    "src": "ico/pibo.ico",
+    "sizes": "72x72 96x96 128x128 256x256"
+  }],
+  "theme_color" : "#000000",
+  "background_color" : "#000000",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}

@@ -1,0 +1,96 @@
+#WEATHER {
+  color : black;
+  background-color: #D9FFBA;
+}
+
+#WEATHER > div {
+  float : left;
+}
+
+#WEATHER .weather {
+  margin-top : 10%;
+  width : 40%;
+  height : 100%;
+  text-align: center;
+}
+
+#WEATHER img {
+  width : 80%;
+}
+
+#WEATHER .info{
+  margin-top : 7%;
+  width : 60%;
+  height : 100%;
+  text-align: center;
+}
+
+#WEATHER .info table {
+  width : 100%;
+  font-size : 48px;
+  color : black;
+
+}
+
+#WEATHER .info td img {
+  width : 70%;
+  padding : 15%;
+}
+
+#WEATHER header {
+  background-color: rgba(255,255,255,0.5);
+  font-family: "Noto Sans KR", sans-serif;
+  line-height : 64px;
+  background-color: white;
+  width : 100%;
+  height : 64px;
+  text-align: center;
+}
+
+#WEATHER header .app {
+  float : left;
+  text-align: center;
+  width : 20%;
+  height : 64px;
+  float :left;
+  color :black;
+  background-color: #9be186;
+}
+
+#WEATHER header .title {
+  float : left;
+  width : calc(80% - 132px);
+}
+
+#WEATHER header .control {
+  float : left;
+  width : 132px;
+}
+
+#WEATHER button {
+  width : 64px;
+  height : 64px;
+  background-color : rgba(0,0,0,0.2) ;
+  color : black;
+  border: none;
+  margin : 0;
+  padding : 0;
+}
+
+#WEATHER .close {
+  text-align: center;
+  width: 10%;
+  float: right;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  /* position: absolute; */
+  top: 24px;
+  position: absolute;
+  right: 24px;
+}
+
+#WEATHER section { 
+  width: calc(100% - 40px);
+  margin: 20px;
+}

@@ -1,0 +1,199 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+body {
+  margin : 0;
+  padding : 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+li {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  float : left;
+  line-height: 72px;
+  margin : 6px;
+  font-size: 36px;
+  width : 72px;
+  height : 72px;
+  background-color: white;
+  border-radius: 72px;
+  background-color: #c9e3e6;
+  border : 3px solid #525252;
+}
+
+#ANIMAL {
+  position: absolute;
+  margin: 0;
+  padding : 0;
+  height : 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #cce2f4;
+  color : black;
+}
+
+#ANIMAL table {
+  width : 100%;
+  height : 90%;
+  font-size: 96px;
+  text-align: center;
+  border: solid 5px black;
+  padding : 5px;
+  border-radius: 25px;
+}
+
+#ANIMAL table td {
+  color : black;
+  border: solid 5px #525252;
+  margin : 5px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#ANIMAL table td:hover {
+  color : white;
+  background-color: #ead065; 
+}
+
+#ANIMAL header {
+  background-color: rgba(255,255,255,0.5);
+  font-family: "Noto Sans KR", sans-serif;
+  line-height : 64px;
+  background-color: white;
+  width : 100%;
+  height : 64px;
+  text-align: center;
+}
+
+#ANIMAL header .app {
+  float : left;
+  text-align: center;
+  width : 20%;
+  height : 64px;
+  float :left;
+  color :black;
+  background-color: #96cdfc;
+}
+
+#ANIMAL header .title {
+  float : left;
+  width : calc(80% - 132px);
+}
+
+#ANIMAL header .control {
+  float : left;
+  width : 132px;
+}
+
+#ANIMAL button {
+  width : 64px;
+  height : 64px;
+  background-color : rgba(0,0,0,0.2) ;
+  color : black;
+  border: none;
+  margin : 0;
+  padding : 0;
+}
+
+#ANIMAL .close {
+  text-align: center;
+  width: 10%;
+  float: right;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  /* position: absolute; */
+  top: 24px;
+  position: absolute;
+  right: 24px;
+}
+
+
+#ANIMAL .close:hover {
+  color : black;
+  background-color: white;
+}
+
+#ANIMAL .text {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+
+
+#ANIMAL div[name=count] {
+  text-align: center;
+  font-size: 4em;
+  line-height: 256px;
+  width : 256px;
+  height: 256px;
+  color :black;
+  background-color :#58ccff;
+  margin : 128px;
+  border-radius: 128px;
+  border: solid 5px black;
+}
+
+#ANIMAL div[name=target] {
+  margin-top: 128px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
+  height: 256px;
+  color: white;
+  border-radius: 16px;
+  border: 12px solid rgba(255,255,255,0.5);
+  text-align: center;
+  font-size: 64px;
+  line-height: 256px;
+}
+
+#ANIMAL .left, #ANIMAL .right {
+  float : left;
+  width : 24%;
+  height: 100%;
+}
+
+#ANIMAL .main {
+  margin-top :20px;
+  width :52%;
+  float: left;
+}
+
+#ANIMAL_D {
+  margin:10px;
+}
+
+#ANIMAL .donut-text {
+  position: absolute;
+  left: 12%;
+  top: 26%;
+  transform: translate(-50%,-50%);
+  font-size: 128px;
+  font-weight: 800;
+  color: #2870b3;
+}
+
+#ANIMAL canvas { 
+  position: absolute;
+  width: 420px;
+  height: 240px;
+  bottom: 10px;
+  right: 0;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+#ANIMAL div.img {
+  width: 100%;
+  text-align: center;
+  margin-top: 20%;
+  float : left;
+}

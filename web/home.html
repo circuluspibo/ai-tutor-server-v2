@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>AI 멘토링 기반의 학습멘토링</title>
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta content="width=device-width, initial-scale=0.68, minimum-scale=0.68, maximum-scale=0.68, user-scalable=no" name="viewport" >
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>    
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/index.css" />
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <!--
+    <link rel="stylesheet" href="./css/all.min.css" />
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.4.1633558788/pose.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js" crossorigin="anonymous"></script>
+
+    <!--
+    <script src="https://kit.fontawesome.com/34403b230d.js" crossorigin="anonymous"></script>  
+-->
+    <link rel="manifest" href="/manifest.json"> 
+    <style>
+      article {
+        width : calc(100% - 40px);
+        height : calc(100% - 40px);
+        border: solid 20px #3f1c04cb;
+        margin : 0px;
+      }
+
+      button {
+        width : 360px;
+        height : 360px;
+        margin : 50px;
+      }
+
+      button p {
+        padding-top :20px;
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      span.title {
+        margin-left : 50px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body id="INDEX">
+    <header> <!-- popup alarm -->
+ 
+    </header>
+    <main>
+      <article id='HOME' class="'i"> <!--class='animate__animated animate__fadeIn'> -->
+        <a href="/web/chart.html">
+          <img width="20%" style="margin-left:50px;margin-top:30px;" src="./image/logo.png"></a><span class="title"> AI기반 학습 멘토링에 참여한 여러분을 환영합니다</span>
+
+        <br/>
+        
+        <button class='i c_e' onclick="location.href='https://www.readingn.com/user/login?profile=e00';" style="cursor:pointer;">
+          <img src='./icon/eng1.png'/>
+          <p>영어 1</p>
+        </button>
+        <button class='i c_e' onclick="location.href='https://www.matamath.net/views/v4_2/login.jsp?profile=m00';" style="cursor:pointer;">
+          <img src='./icon/math1.png'/>
+          <p>수학 1</p>
+        </button>
+        <button class='i c_e' onclick="location.href='https://at.circul.us/sign/in?profile=i00';" style="cursor:pointer;">
+          <img src='./icon/info1.png'/>
+          <p>정보 1</p>
+        </button>
+        <br/>
+        <button class='i c_e' onclick="location.href='https://www.readingn.com/user/login?profile=e01';" style="cursor:pointer;">
+          <img src='./icon/eng2.png'/>
+          <p>영어 2</p>
+        </button>                    
+      
+        <button class='i c_e' onclick="location.href='https://www.matamath.net/views/v4_2/login.jsp?profile=m01';" style="cursor:pointer;">
+          <img src='./icon/math2.png'/>
+          <p>수학 2</p>
+        </button>                                                                                       
+        <button class='i c_e' onclick="location.href='https://at.circul.us/sign/in?profile=i01';" style="cursor:pointer;">
+          <img src='./icon/info2.png'/>
+          <p>정보 2</p>
+        </button>                                                                                             
+      </article>
+      <aside style="visibility:hidden">
+        <video id="video" width="720px" height="480px"></video>
+      </aside>
+    </main>
+    <footer style="visibility:hidden">
+      <table>
+        <tr class="top">
+          <td>
+            <img class="medal" src="/image/bronze.png" />
+          </td>
+          <td colspan="2"><span class="score">참 잘했어요!</span></td>
+        </tr>
+        <tr>
+          <td colspan="3" class="space"> </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/image/review.png" />
+          </td>
+          <td>
+            <img src="/image/speed.png" />
+          </td>
+          <td>
+            <img src="/image/concentrate.png" /> 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="acc" src="/image/step1.png" />
+          </td>
+          <td>
+            <img class="spd" src="/image/step2.png" />
+          </td>
+          <td>
+            <img class="cct" src="/image/step3.png" />
+          </td>
+        </tr>      
+      </table>
+    </footer>
+  </body>
+</html>

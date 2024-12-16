@@ -1,0 +1,59 @@
+<html id="BOXING">
+  <header>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    <title>BOXING</title>
+  </header>
+  <body>
+    <header>
+      <div class='app'><h1><i class="fa-solid fa-ear-listen"></i> 신체훈련</h1></div>
+      <div class='title'><h1>팔로 가드를 올려서 머리를 보호하자</h1></div>
+      <div class="control">
+        <button>
+          <i class="fa-solid fa-2x fa-backward-step"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-2x fa-circle-question"></i>
+        </button>
+      </div>
+    </header>
+    <section class="left">
+      <div id="BOXING_donut" name='donut' class="count"></div>
+      <div class="score">
+        <ul class="check">
+          <li name="t0"></li>
+          <li name="t1"></li>
+          <li name="t2"></li>
+          <li name="t3"></li>
+          <li name="t4"></li>
+          <li name="t5"></li>
+          <li name="t6"></li>
+          <li name="t7"></li>
+          <li name="t8"></li>
+          <li name="t9"></li>                    
+        </ul>
+        <ul class="step">
+          <li name="s0"></li>
+          <li name="s1"></li>
+          <li name="s2"></li>
+        </ul>        
+      </div>
+      <div class="view">
+        <video name="input_video" hidden></video>
+        <canvas name="output_canvas" width="460px" height="250px" ></canvas>
+      </div> 
+    </section>
+    <section class="right">
+      <table>
+        <tr>
+          <td class="left">
+            <img class='left' src="/app/BOXING/image/punch.png">
+          </td>
+          <td class="right">
+            <img class='right' src="/app/BOXING/image/hit.png">
+          </td>
+        </tr>
+      </table>
+    </section>
+</html>

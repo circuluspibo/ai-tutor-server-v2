@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>Web Monitoring</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.3.7/mqtt.min.js" integrity="sha512-tc5xpAPaQDl/Uxd7ZVbV66v94Lys0IefMJSdlABPuzyCv0IXmr9TkqEQvZiWKRoXMSlP5YPRwpq2a+v5q2uzMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    <main>
+      <table>
+        <tr class="top">
+          <td class="top">
+            <div class='block' name="total" onclick="tts()">
+              <h3 class="title">총 로봇</h3>
+              <p class='value' name='robot_cnt'>20</p>
+            </div>
+          </td>
+          <td class="top">
+            <div class='block' name="total">
+              <h3 class="title">관리자</h3>
+              <p class='value' name='manager_cnt'>20</p>
+            </div>
+          </td>          
+          <td class="top">
+            <div class='block' name="total">
+              <h3 class="title">액티브</h3>
+              <p class='value' name='active_cnt'>0</p>
+            </div>
+          </td>          
+          <td class="top">
+            <div class='block' name="total">
+              <h3 class="title">총 대화</h3>
+              <p class='value' name='dialog_cnt'>0</p>
+            </div>
+          </td>
+          <td class="top">
+            <div class='block' name="total">
+              <h3 class="title">총 교감</h3>
+              <p class='value' name='touch_cnt'>0</p>
+            </div>
+          </td>
+          <td class="top">
+            <div class='block' name="total">
+              <h3 class="title">총 감지</h3>
+              <p class='value' name='person_cnt'>0</p>
+            </div>
+          </td>
+          <td class="top">
+            <div class='block' name="total">
+              <h3 class="title warn">자율1</h3>
+              <p class='value' name='auto_cnt'>0</p>
+            </div>
+          </td>
+          <td class="top">
+            <div class='block' name="total">
+              <h3 class="title warn">총 위험</h3>
+              <p class='value' name='alarm_cnt'>0</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <tr>
+            <td colspan="2">
+              <div class='block' name="total">
+                <canvas id="cDialog"></canvas>
+              </div>
+            </td>
+            <td colspan="4" rowspan="2">
+              <div id='map' class="map">
+            </td>
+            <td colspan="2">
+              <div class='block' name="total">
+                <canvas id="cUser"></canvas>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2">
+              <div class='block' name="total">
+                <canvas id="cEmotion"></canvas>
+              </div>
+            </td>
+            <td colspan="2">
+              <div class='block' name="total">
+                <canvas id="cObject"></canvas>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <div id="log">
+                <p>Iniailized logging system</p>
+              </div>
+            </td>
+            <td colspan="2">
+              <div class='block'>
+                <canvas id="cBot"></canvas>
+              </div>
+            </td>
+          </tr>        
+        </tr>
+      </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

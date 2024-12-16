@@ -1,0 +1,78 @@
+<html id='PIANO'>
+  <head>
+    <title>OFFICIAL-NUMBER</title>
+    <script src='../../../js/$.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/donutty@2.3.1/src/donutty.min.js"></script>
+    <script src='./js/pibo.js'></script>
+    <script src='./js/stub.js'></script>    
+  </head>
+  <body>
+    <header>
+      <div class='app'><h1><i class="fa-solid fa-ear-listen"></i> 청각훈련</h1></div>
+      <div class='title'><h1>소리를 잘 듣고 건반을 순서대로 눌러보세요</h1></div>
+      <div class="control">
+        <button>
+          <i class="fa-solid fa-2x fa-backward-step"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-2x fa-circle-question"></i>
+        </button>
+      </div>
+    </header>
+    <section class="left">
+      <div id="PIANO_D"></div>
+      <div class="score">
+        <ul class="check">
+          <li name="t0"></li>
+          <li name="t1"></li>
+          <li name="t2"></li>
+          <li name="t3"></li>
+          <li name="t4"></li>
+          <li name="t5"></li>
+          <li name="t6"></li>
+          <li name="t7"></li>
+          <li name="t8"></li>
+          <li name="t9"></li>                    
+        </ul>
+        <ul class="step">
+          <li name="s0"></li>
+          <li name="s1"></li>
+          <li name="s2"></li>
+        </ul>        
+      </div>
+      <div class="view">
+        <video name="input_video" hidden></video>
+        <canvas name="output_canvas" width="460px" height="250px" ></canvas>
+      </div>
+    </section>
+    <section class='right'>
+      <table class="top">
+        <tr>
+          <td name='key1'>
+            <img src='/app/PIANO/image/snd1.png'>
+          </td>
+          <td name='key2'>
+            <img src='/app/PIANO/image/snd8.png'>
+          </td>
+          <td name='key3'>
+            <img src='/app/PIANO/image/snd1.png'>
+          </td>
+        </tr>
+      </table>
+      <table class="bottom">
+        <tr>
+          <td name='snd1'>도</td>
+          <td name='snd2'>레</td>
+          <td name='snd3'>미</td>
+          <td name='snd4'>파</td>
+          <td name='snd5'>솔</td>
+          <td name='snd6'>라</td>
+          <td name='snd7'>시</td>
+          <td name='snd8'>도</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
